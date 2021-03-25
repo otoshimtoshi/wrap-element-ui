@@ -1,5 +1,7 @@
 <template>
-  <ELAvatar v-bind="$attrs" v-on="$listeners"></ELAvatar>
+  <ELAvatar v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELAvatar>
 </template>
 
 <script lang="ts">

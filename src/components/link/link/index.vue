@@ -1,10 +1,12 @@
 <template>
-  <ELLink v-bind="$attrs"></ELLink>
+  <ELLink v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELLink>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELLink from 'element-ui/lib/el-link'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELLink from 'element-ui/lib/link'
 
 export default defineComponent({
   name: 'JLink',

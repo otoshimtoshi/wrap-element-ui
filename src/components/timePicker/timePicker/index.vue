@@ -1,10 +1,12 @@
 <template>
-  <ELTimePicker v-bind="$attrs"></ELTimePicker>
+  <ELTimePicker v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELTimePicker>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELTimePicker from 'element-ui/lib/el-time-picker'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELTimePicker from 'element-ui/lib/time-picker'
 
 export default defineComponent({
   name: 'JTimePicker',

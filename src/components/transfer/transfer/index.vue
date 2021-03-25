@@ -1,10 +1,12 @@
 <template>
-  <ELTransfer v-bind="$attrs"></ELTransfer>
+  <ELTransfer v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELTransfer>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELTransfer from 'element-ui/lib/el-transfer'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELTransfer from 'element-ui/lib/transfer'
 
 export default defineComponent({
   name: 'JTransfer',

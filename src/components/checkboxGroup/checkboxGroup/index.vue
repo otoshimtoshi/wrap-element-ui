@@ -1,10 +1,12 @@
 <template>
-  <ELCheckboxGroup v-bind="$attrs"></ELCheckboxGroup>
+  <ELCheckboxGroup v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELCheckboxGroup>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELCheckboxGroup from 'element-ui/lib/el-checkbox-group'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELCheckboxGroup from 'element-ui/lib/checkbox-group'
 
 export default defineComponent({
   name: 'JCheckboxGroup',

@@ -23,7 +23,6 @@ import CheckboxGroup from './components/checkboxGroup'
 import Col from './components/col'
 import Collapse from './components/collapse'
 import CollapseItem from './components/collapseItem'
-import CollapseTransition from './components/collapseTransition'
 import ColorPicker from './components/colorPicker'
 import Container from './components/container'
 import DatePicker from './components/datePicker'
@@ -52,7 +51,6 @@ import PageHeader from './components/pageHeader'
 import Pagination from './components/pagination'
 import Popconfirm from './components/popconfirm'
 import Popover from './components/popover'
-import Popper from './components/popper'
 import Progress from './components/progress'
 import Radio from './components/radio'
 import RadioButton from './components/radioButton'
@@ -114,7 +112,6 @@ const components = [
   Col,
   Collapse,
   CollapseItem,
-  CollapseTransition,
   ColorPicker,
   Container,
   DatePicker,
@@ -143,7 +140,6 @@ const components = [
   Pagination,
   Popconfirm,
   Popover,
-  Popper,
   Progress,
   Radio,
   RadioButton,
@@ -228,7 +224,6 @@ export default {
   Col,
   Collapse,
   CollapseItem,
-  CollapseTransition,
   ColorPicker,
   Container,
   DatePicker,
@@ -257,7 +252,6 @@ export default {
   Pagination,
   Popconfirm,
   Popover,
-  Popper,
   Progress,
   Radio,
   RadioButton,

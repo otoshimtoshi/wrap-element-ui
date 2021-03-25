@@ -1,10 +1,12 @@
 <template>
-  <ELDropdown v-bind="$attrs"></ELDropdown>
+  <ELDropdown v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELDropdown>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELDropdown from 'element-ui/lib/el-dropdown'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELDropdown from 'element-ui/lib/dropdown'
 
 export default defineComponent({
   name: 'JDropdown',

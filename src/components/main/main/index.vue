@@ -1,10 +1,12 @@
 <template>
-  <ELMain v-bind="$attrs"></ELMain>
+  <ELMain v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELMain>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELMain from 'element-ui/lib/el-main'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELMain from 'element-ui/lib/main'
 
 export default defineComponent({
   name: 'JMain',

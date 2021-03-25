@@ -1,10 +1,12 @@
 <template>
-  <ELTableColumn v-bind="$attrs"></ELTableColumn>
+  <ELTableColumn v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELTableColumn>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELTableColumn from 'element-ui/lib/el-table-column'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELTableColumn from 'element-ui/lib/table-column'
 
 export default defineComponent({
   name: 'JTableColumn',

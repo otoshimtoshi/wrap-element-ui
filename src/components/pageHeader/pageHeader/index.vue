@@ -1,10 +1,12 @@
 <template>
-  <ELPageHeader v-bind="$attrs"></ELPageHeader>
+  <ELPageHeader v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELPageHeader>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELPageHeader from 'element-ui/lib/el-page-header'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELPageHeader from 'element-ui/lib/page-header'
 
 export default defineComponent({
   name: 'JPageHeader',

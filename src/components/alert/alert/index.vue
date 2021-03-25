@@ -1,5 +1,7 @@
 <template>
-  <ELAlert v-bind="$attrs" v-on="$listeners"></ELAlert>
+  <ELAlert v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELAlert>
 </template>
 
 <script lang="ts">

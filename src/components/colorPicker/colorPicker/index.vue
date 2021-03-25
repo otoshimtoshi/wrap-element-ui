@@ -1,10 +1,12 @@
 <template>
-  <ELColorPicker v-bind="$attrs"></ELColorPicker>
+  <ELColorPicker v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELColorPicker>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELColorPicker from 'element-ui/lib/el-color-picker'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELColorPicker from 'element-ui/lib/color-picker'
 
 export default defineComponent({
   name: 'JColorPicker',

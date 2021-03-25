@@ -1,10 +1,12 @@
 <template>
-  <ELButton v-bind="$attrs"><slot /></ELButton>
+  <ELButton v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELButton>
 </template>
 
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api'
-import ELButton from 'element-ui/lib/el-button'
+import ELButton from 'element-ui/lib/button'
 
 export default defineComponent({
   name: 'JButton',

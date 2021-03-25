@@ -1,10 +1,12 @@
 <template>
-  <ELFooter v-bind="$attrs"></ELFooter>
+  <ELFooter v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELFooter>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELFooter from 'element-ui/lib/el-footer'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELFooter from 'element-ui/lib/footer'
 
 export default defineComponent({
   name: 'JFooter',

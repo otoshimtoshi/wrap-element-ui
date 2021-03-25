@@ -1,10 +1,12 @@
 <template>
-  <ELOption v-bind="$attrs"></ELOption>
+  <ELOption v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELOption>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELOption from 'element-ui/lib/el-option'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELOption from 'element-ui/lib/option'
 
 export default defineComponent({
   name: 'JOption',

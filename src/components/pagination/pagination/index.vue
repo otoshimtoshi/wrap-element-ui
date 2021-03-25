@@ -1,10 +1,12 @@
 <template>
-  <ELPagination v-bind="$attrs"></ELPagination>
+  <ELPagination v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELPagination>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELPagination from 'element-ui/lib/el-pagination'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELPagination from 'element-ui/lib/pagination'
 
 export default defineComponent({
   name: 'JPagination',

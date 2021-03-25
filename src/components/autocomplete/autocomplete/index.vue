@@ -1,5 +1,7 @@
 <template>
-  <ELAutocomplete v-bind="$attrs" v-on="$listeners"></ELAutocomplete>
+  <ELAutocomplete v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELAutocomplete>
 </template>
 
 <script lang="ts">

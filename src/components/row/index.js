@@ -1,4 +1,4 @@
-import Component from 'element-ui/lib/el-row'
+import Component from 'element-ui/lib/row'
 
 Component.name = Component.name.replace(/^EL/, 'J')
 Component.install = function(Vue) {

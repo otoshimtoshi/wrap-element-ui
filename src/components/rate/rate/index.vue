@@ -1,10 +1,12 @@
 <template>
-  <ELRate v-bind="$attrs"></ELRate>
+  <ELRate v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELRate>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELRate from 'element-ui/lib/el-rate'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELRate from 'element-ui/lib/rate'
 
 export default defineComponent({
   name: 'JRate',

@@ -1,10 +1,12 @@
 <template>
-  <ELTooltip v-bind="$attrs"></ELTooltip>
+  <ELTooltip v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELTooltip>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELTooltip from 'element-ui/lib/el-tooltip'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELTooltip from 'element-ui/lib/tooltip'
 
 export default defineComponent({
   name: 'JTooltip',

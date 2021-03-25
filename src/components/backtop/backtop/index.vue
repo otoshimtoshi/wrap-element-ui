@@ -1,5 +1,7 @@
 <template>
-  <ELBacktop v-bind="$attrs" v-on="$listeners"></ELBacktop>
+  <ELBacktop v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELBacktop>
 </template>
 
 <script lang="ts">

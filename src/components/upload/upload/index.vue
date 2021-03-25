@@ -1,10 +1,12 @@
 <template>
-  <ELUpload v-bind="$attrs"></ELUpload>
+  <ELUpload v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELUpload>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELUpload from 'element-ui/lib/el-upload'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELUpload from 'element-ui/lib/upload'
 
 export default defineComponent({
   name: 'JUpload',

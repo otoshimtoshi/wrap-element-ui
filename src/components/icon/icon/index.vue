@@ -1,10 +1,12 @@
 <template>
-  <ELIcon v-bind="$attrs"></ELIcon>
+  <ELIcon v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELIcon>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELIcon from 'element-ui/lib/el-icon'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELIcon from 'element-ui/lib/icon'
 
 export default defineComponent({
   name: 'JIcon',

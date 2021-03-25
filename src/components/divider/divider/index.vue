@@ -1,10 +1,12 @@
 <template>
-  <ELDivider v-bind="$attrs"></ELDivider>
+  <ELDivider v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELDivider>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELDivider from 'element-ui/lib/el-divider'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELDivider from 'element-ui/lib/divider'
 
 export default defineComponent({
   name: 'JDivider',

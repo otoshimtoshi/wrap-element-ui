@@ -1,10 +1,12 @@
 <template>
-  <ELSubmenu v-bind="$attrs"></ELSubmenu>
+  <ELSubmenu v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELSubmenu>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELSubmenu from 'element-ui/lib/el-submenu'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELSubmenu from 'element-ui/lib/submenu'
 
 export default defineComponent({
   name: 'JSubmenu',

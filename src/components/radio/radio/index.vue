@@ -1,10 +1,12 @@
 <template>
-  <ELRadio v-bind="$attrs"></ELRadio>
+  <ELRadio v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELRadio>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELRadio from 'element-ui/lib/el-radio'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELRadio from 'element-ui/lib/radio'
 
 export default defineComponent({
   name: 'JRadio',

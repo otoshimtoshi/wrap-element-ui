@@ -1,10 +1,12 @@
 <template>
-  <ELCalendar v-bind="$attrs"></ELCalendar>
+  <ELCalendar v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELCalendar>
 </template>
 
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api'
-import ELCalendar from 'element-ui/lib/el-calendar'
+import ELCalendar from 'element-ui/lib/calendar'
 
 export default defineComponent({
   name: 'JCalendar',

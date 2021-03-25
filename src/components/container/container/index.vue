@@ -1,10 +1,12 @@
 <template>
-  <ELContainer v-bind="$attrs"></ELContainer>
+  <ELContainer v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELContainer>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELContainer from 'element-ui/lib/el-container'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELContainer from 'element-ui/lib/container'
 
 export default defineComponent({
   name: 'JContainer',

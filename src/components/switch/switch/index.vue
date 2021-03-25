@@ -1,10 +1,12 @@
 <template>
-  <ELSwitch v-bind="$attrs"></ELSwitch>
+  <ELSwitch v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELSwitch>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELSwitch from 'element-ui/lib/el-switch'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELSwitch from 'element-ui/lib/switch'
 
 export default defineComponent({
   name: 'JSwitch',

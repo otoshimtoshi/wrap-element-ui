@@ -1,10 +1,12 @@
 <template>
-  <ELRadioGroup v-bind="$attrs"></ELRadioGroup>
+  <ELRadioGroup v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELRadioGroup>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELRadioGroup from 'element-ui/lib/el-radio-group'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELRadioGroup from 'element-ui/lib/radio-group'
 
 export default defineComponent({
   name: 'JRadioGroup',

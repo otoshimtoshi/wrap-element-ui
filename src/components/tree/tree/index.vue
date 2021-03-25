@@ -1,10 +1,12 @@
 <template>
-  <ELTree v-bind="$attrs"></ELTree>
+  <ELTree v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELTree>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELTree from 'element-ui/lib/el-tree'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELTree from 'element-ui/lib/tree'
 
 export default defineComponent({
   name: 'JTree',

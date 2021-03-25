@@ -1,5 +1,7 @@
 <template>
-  <ELBreadcrumbItem v-bind="$attrs" v-on="$listeners"></ELBreadcrumbItem>
+  <ELBreadcrumbItem v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELBreadcrumbItem>
 </template>
 
 <script lang="ts">

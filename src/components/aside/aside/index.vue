@@ -1,5 +1,7 @@
 <template>
-  <ELAside v-bind="$attrs" v-on="$listeners"></ELAside>
+  <ELAside v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELAside>
 </template>
 
 <script lang="ts">

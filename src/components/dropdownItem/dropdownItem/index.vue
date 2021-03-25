@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from '@nuxtjs/composition-api'
 import ELDropdownItem from 'element-ui/lib/el-dropdown-item'
 
 export default defineComponent({

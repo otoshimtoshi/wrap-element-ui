@@ -1,10 +1,12 @@
 <template>
-  <ELDatePicker v-bind="$attrs"></ELDatePicker>
+  <ELDatePicker v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELDatePicker>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELDatePicker from 'element-ui/lib/el-date-picker'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELDatePicker from 'element-ui/lib/date-picker'
 
 export default defineComponent({
   name: 'JDatePicker',

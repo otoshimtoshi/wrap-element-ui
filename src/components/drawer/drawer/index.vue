@@ -1,10 +1,12 @@
 <template>
-  <ELDrawer v-bind="$attrs"></ELDrawer>
+  <ELDrawer v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELDrawer>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELDrawer from 'element-ui/lib/el-drawer'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELDrawer from 'element-ui/lib/drawer'
 
 export default defineComponent({
   name: 'JDrawer',

@@ -1,10 +1,12 @@
 <template>
-  <ELForm v-bind="$attrs"></ELForm>
+  <ELForm v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELForm>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELForm from 'element-ui/lib/el-form'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELForm from 'element-ui/lib/form'
 
 export default defineComponent({
   name: 'JForm',

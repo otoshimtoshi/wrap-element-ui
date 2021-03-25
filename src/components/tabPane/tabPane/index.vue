@@ -1,10 +1,12 @@
 <template>
-  <ELTabPane v-bind="$attrs"></ELTabPane>
+  <ELTabPane v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELTabPane>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELTabPane from 'element-ui/lib/el-tab-pane'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELTabPane from 'element-ui/lib/tab-pane'
 
 export default defineComponent({
   name: 'JTabPane',

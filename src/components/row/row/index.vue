@@ -1,10 +1,12 @@
 <template>
-  <ELRow v-bind="$attrs"></ELRow>
+  <ELRow v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELRow>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELRow from 'element-ui/lib/el-row'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELRow from 'element-ui/lib/row'
 
 export default defineComponent({
   name: 'JRow',

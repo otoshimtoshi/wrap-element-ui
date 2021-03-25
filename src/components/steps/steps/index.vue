@@ -1,10 +1,12 @@
 <template>
-  <ELSteps v-bind="$attrs"></ELSteps>
+  <ELSteps v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELSteps>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELSteps from 'element-ui/lib/el-steps'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELSteps from 'element-ui/lib/steps'
 
 export default defineComponent({
   name: 'JSteps',

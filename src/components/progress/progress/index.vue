@@ -1,10 +1,12 @@
 <template>
-  <ELProgress v-bind="$attrs"></ELProgress>
+  <ELProgress v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELProgress>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELProgress from 'element-ui/lib/el-progress'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELProgress from 'element-ui/lib/progress'
 
 export default defineComponent({
   name: 'JProgress',

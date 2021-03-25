@@ -1,10 +1,12 @@
 <template>
-  <ELPopconfirm v-bind="$attrs"></ELPopconfirm>
+  <ELPopconfirm v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELPopconfirm>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELPopconfirm from 'element-ui/lib/el-popconfirm'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELPopconfirm from 'element-ui/lib/popconfirm'
 
 export default defineComponent({
   name: 'JPopconfirm',

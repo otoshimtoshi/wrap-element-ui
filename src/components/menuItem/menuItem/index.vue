@@ -1,10 +1,12 @@
 <template>
-  <ELMenuItem v-bind="$attrs"></ELMenuItem>
+  <ELMenuItem v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELMenuItem>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELMenuItem from 'element-ui/lib/el-menu-item'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELMenuItem from 'element-ui/lib/menu-item'
 
 export default defineComponent({
   name: 'JMenuItem',

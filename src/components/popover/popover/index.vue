@@ -1,10 +1,12 @@
 <template>
-  <ELPopover v-bind="$attrs"></ELPopover>
+  <ELPopover v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </ELPopover>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import ELPopover from 'element-ui/lib/el-popover'
+import { defineComponent } from '@nuxtjs/composition-api'
+import ELPopover from 'element-ui/lib/popover'
 
 export default defineComponent({
   name: 'JPopover',

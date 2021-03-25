@@ -16,14 +16,9 @@
 </template>
 
 <script lang="ts">
-import { reactive, defineComponent } from 'vue'
+import { defineComponent } from '@nuxtjs/composition-api'
 export default defineComponent({
   name: 'App',
-  setup() {
-    const state = reactive({})
-    return {
-      state,
-    }
-  },
+  setup() {},
 })
 </script>
