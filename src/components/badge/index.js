@@ -1,4 +1,4 @@
-import Component from './badge/index.vue'
+import Component from './badge'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

@@ -1,4 +1,4 @@
-import Component from './tableColumn/index.vue'
+import Component from './tableColumn'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

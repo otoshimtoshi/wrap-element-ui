@@ -1,4 +1,4 @@
-import Component from './menuItemGroup/index.vue'
+import Component from './menuItemGroup'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

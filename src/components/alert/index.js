@@ -1,4 +1,4 @@
-import Component from './alert/index.vue'
+import Component from './alert'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

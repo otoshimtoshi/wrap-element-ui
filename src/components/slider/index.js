@@ -1,4 +1,4 @@
-import Component from './slider/index.vue'
+import Component from './slider'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

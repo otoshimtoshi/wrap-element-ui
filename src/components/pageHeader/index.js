@@ -1,4 +1,4 @@
-import Component from './pageHeader/index.vue'
+import Component from './pageHeader'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

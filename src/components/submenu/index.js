@@ -1,4 +1,4 @@
-import Component from './submenu/index.vue'
+import Component from './submenu'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

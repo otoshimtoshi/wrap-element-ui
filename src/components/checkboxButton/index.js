@@ -1,6 +1,7 @@
-import Component from './checkboxButton/index.vue'
+import Component from './checkboxButton'
 
 Component.install = function(Vue) {
-  Vue.Component(Component.name, Component)
+  Vue.component(Component.name, Component)
 }
+
 export default Component

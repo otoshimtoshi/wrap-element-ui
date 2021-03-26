@@ -1,4 +1,4 @@
-import Component from './dropdownMenu/index.vue'
+import Component from './dropdownMenu'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

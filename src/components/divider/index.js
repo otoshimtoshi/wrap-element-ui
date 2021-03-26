@@ -1,4 +1,4 @@
-import Component from './divider/index.vue'
+import Component from './divider'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

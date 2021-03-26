@@ -1,4 +1,4 @@
-import Component from './popconfirm/index.vue'
+import Component from './popconfirm'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

@@ -1,4 +1,4 @@
-import Component from './aside/index.vue'
+import Component from './aside'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

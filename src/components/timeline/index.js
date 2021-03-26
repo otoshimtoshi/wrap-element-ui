@@ -1,4 +1,4 @@
-import Component from './timeline/index.vue'
+import Component from './timeline'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

@@ -1,6 +1,5 @@
-import Component from 'element-ui/lib/row'
+import Component from './row'
 
-Component.name = Component.name.replace(/^EL/, 'J')
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)
 }

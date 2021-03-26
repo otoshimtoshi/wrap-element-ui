@@ -1,4 +1,4 @@
-import Component from './colorPicker/index.vue'
+import Component from './colorPicker'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

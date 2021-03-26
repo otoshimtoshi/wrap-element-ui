@@ -1,4 +1,4 @@
-import Component from './popover/index.vue'
+import Component from './popover'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

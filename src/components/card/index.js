@@ -1,4 +1,4 @@
-import Component from './card/index.vue'
+import Component from './card'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

@@ -1,4 +1,4 @@
-import Component from './datePicker/index.vue'
+import Component from './datePicker'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

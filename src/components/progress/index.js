@@ -1,4 +1,4 @@
-import Component from './progress/index.vue'
+import Component from './progress'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

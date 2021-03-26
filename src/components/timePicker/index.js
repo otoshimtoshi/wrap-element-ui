@@ -1,4 +1,4 @@
-import Component from './timePicker/index.vue'
+import Component from './timePicker'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

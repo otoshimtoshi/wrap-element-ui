@@ -1,4 +1,4 @@
-import Component from './upload/index.vue'
+import Component from './upload'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

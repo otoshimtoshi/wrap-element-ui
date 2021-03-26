@@ -1,6 +1,3 @@
-import { createApp } from 'vue'
-// import '../lib/theme-chalk/index.css'
-import App from './App.vue'
 import Alert from './components/alert'
 import Aside from './components/aside'
 import Autocomplete from './components/autocomplete'
@@ -8,7 +5,7 @@ import Avatar from './components/avatar'
 import Backtop from './components/backtop'
 import Badge from './components/badge'
 import Breadcrumb from './components/breadcrumb'
-import BreadcrumbItem from './components/breadcrumbItem'
+import BreadcrumbItem from './components/breadcrumbitem'
 import Button from './components/button'
 import ButtonGroup from './components/buttonGroup'
 import Calendar from './components/calendar'
@@ -38,13 +35,18 @@ import FormItem from './components/formItem'
 import Header from './components/header'
 import Icon from './components/icon'
 import Image from './components/image'
+import InfiniteScroll from './components/infiniteScroll'
 import Input from './components/input'
 import InputNumber from './components/inputNumber'
 import Link from './components/link'
+import Loading from './components/loading'
 import Main from './components/main'
 import Menu from './components/menu'
 import MenuItem from './components/menuItem'
 import MenuItemGroup from './components/menuItemGroup'
+import Message from './components/message'
+import MessageBox from './components/messageBox'
+import Notification from './components/notification'
 import Option from './components/option'
 import OptionGroup from './components/optionGroup'
 import PageHeader from './components/pageHeader'
@@ -60,6 +62,7 @@ import Row from './components/row'
 import Scrollbar from './components/scrollbar'
 import Select from './components/select'
 import Slider from './components/slider'
+import Spinner from './components/spinner'
 import Step from './components/step'
 import Steps from './components/steps'
 import Submenu from './components/submenu'
@@ -78,16 +81,9 @@ import Transfer from './components/transfer'
 import Tree from './components/tree'
 import Upload from './components/upload'
 
-import {
-  ElInfiniteScroll,
-  ElLoading,
-  ElMessage,
-  ElMessageBox,
-  ElNotification,
-  locale,
-} from 'element-ui'
-import { i18n } from 'element-ui/lib/locale'
-import { ja } from 'element-ui/lib/locale/lang/ja'
+import locale from 'element-ui/lib/locale'
+import ja from 'element-ui/lib/locale/lang/ja'
+import CollapseTransition from 'element-ui/lib/transitions/collapse-transition'
 
 const components = [
   Alert,
@@ -127,13 +123,18 @@ const components = [
   Header,
   Icon,
   Image,
+  InfiniteScroll,
   Input,
   InputNumber,
   Link,
+  Loading,
   Main,
   Menu,
   MenuItem,
   MenuItemGroup,
+  Message,
+  MessageBox,
+  Notification,
   Option,
   OptionGroup,
   PageHeader,
@@ -149,59 +150,55 @@ const components = [
   Scrollbar,
   Select,
   Slider,
+  Spinner,
   Step,
   Steps,
   Submenu,
   Switch,
-  TabPane,
   Table,
   TableColumn,
+  TabPane,
   Tabs,
   Tag,
-  TimePicker,
-  TimeSelect,
   Timeline,
   TimelineItem,
+  TimePicker,
+  TimeSelect,
   Tooltip,
   Transfer,
   Tree,
   Upload,
 ]
 
-const plugins = [
-  ElInfiniteScroll,
-  ElLoading,
-  ElMessage,
-  ElMessageBox,
-  ElNotification,
-]
-
-const version = '0.1.0'
-const install = (Vue, opts = {}) => {
+const install = function(Vue, opts = {}) {
   locale.use(opts.locale || ja)
-  i18n(opts.i18n)
+  locale.i18n(opts.i18n)
 
   components.forEach(component => {
-    Vue.component(component.name, component)
+    Vue.use(component)
   })
 
-  plugins.forEach(plugin => {
-    Vue.use(plugin)
-  })
+  Vue.component('OCollapseTransition', CollapseTransition)
+
+  Vue.prototype.$ELEMENT = {
+    size: opts.size || '',
+    zIndex: opts.zIndex || 1000,
+  }
+
+  Vue.prototype.$msgbox = MessageBox
+  Vue.prototype.$alert = MessageBox.alert
+  Vue.prototype.$confirm = MessageBox.confirm
+  Vue.prototype.$prompt = MessageBox.prompt
+  Vue.prototype.$notify = Notification
+  Vue.prototype.$message = Message
 }
 
-const app = createApp(App)
-components.forEach(component => {
-  app.component(component.name, component)
-})
-plugins.forEach(plugin => {
-  app.use(plugin)
-})
-app.mount('#app')
-
 export default {
-  version,
+  version: '1.0.0',
+  locale: locale.use,
+  i18n: locale.i18n,
   install,
+  CollapseTransition,
   Alert,
   Aside,
   Autocomplete,
@@ -239,13 +236,18 @@ export default {
   Header,
   Icon,
   Image,
+  InfiniteScroll,
   Input,
   InputNumber,
   Link,
+  Loading,
   Main,
   Menu,
   MenuItem,
   MenuItemGroup,
+  Message,
+  MessageBox,
+  Notification,
   Option,
   OptionGroup,
   PageHeader,
@@ -261,19 +263,20 @@ export default {
   Scrollbar,
   Select,
   Slider,
+  Spinner,
   Step,
   Steps,
   Submenu,
   Switch,
-  TabPane,
   Table,
   TableColumn,
+  TabPane,
   Tabs,
   Tag,
-  TimePicker,
-  TimeSelect,
   Timeline,
   TimelineItem,
+  TimePicker,
+  TimeSelect,
   Tooltip,
   Transfer,
   Tree,

@@ -1,4 +1,4 @@
-import Component from './drawer/index.vue'
+import Component from './drawer'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

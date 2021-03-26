@@ -1,4 +1,4 @@
-import Component from './tabPane/index.vue'
+import Component from './tabPane'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

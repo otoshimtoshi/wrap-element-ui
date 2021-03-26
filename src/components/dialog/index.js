@@ -1,4 +1,4 @@
-import Component from './dialog/index.vue'
+import Component from './dialog'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

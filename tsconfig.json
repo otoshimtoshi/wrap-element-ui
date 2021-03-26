@@ -1,23 +1,23 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "declaration": true,
-    "noImplicitAny": false,
-    "removeComments": true,
+    "target": "es5",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
     "moduleResolution": "node",
+    "allowJs": true,
+    "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true,
-    "jsx": "preserve",
-    "noLib": false,
-    "target": "es6",
     "sourceMap": true,
-    "lib": ["ESNext", "DOM"],
     "baseUrl": ".",
+    "lib": ["ESNext", "DOM"],
     "paths": {
       "@/*": ["src/*"],
       "~/*": ["./*"]
     }
   },
+  "include": ["src/**/*.ts", "src/**/*.vue"],
   "exclude": ["node_modules"]
 }

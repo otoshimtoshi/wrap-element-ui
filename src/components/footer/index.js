@@ -1,4 +1,4 @@
-import Component from './footer/index.vue'
+import Component from './footer'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

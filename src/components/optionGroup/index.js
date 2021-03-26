@@ -1,6 +1,7 @@
-import Component from './optionGroup/index.vue'
+import Component from './optionGroup'
 
 Component.install = function(Vue) {
-  Vue.Component(Component.name, Component)
+  Vue.component(Component.name, Component)
 }
+
 export default Component

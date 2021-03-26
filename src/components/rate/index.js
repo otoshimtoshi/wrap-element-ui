@@ -1,4 +1,4 @@
-import Component from './rate/index.vue'
+import Component from './rate'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

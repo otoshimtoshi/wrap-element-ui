@@ -1,4 +1,4 @@
-import Component from './pagination/index.vue'
+import Component from './pagination'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

@@ -1,4 +1,4 @@
-import Component from './tooltip/index.vue'
+import Component from './tooltip'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

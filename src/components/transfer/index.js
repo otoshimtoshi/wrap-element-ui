@@ -1,4 +1,4 @@
-import Component from './transfer/index.vue'
+import Component from './transfer'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

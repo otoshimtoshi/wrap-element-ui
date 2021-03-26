@@ -1,4 +1,4 @@
-import Component from './timeSelect/index.vue'
+import Component from './timeSelect'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

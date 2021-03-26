@@ -1,4 +1,4 @@
-import Component from './formItem/index.vue'
+import Component from './formItem'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

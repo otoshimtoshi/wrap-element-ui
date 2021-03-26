@@ -1,4 +1,4 @@
-import Component from './scrollbar/index.vue'
+import Component from './scrollbar'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

@@ -1,4 +1,4 @@
-import Component from './autocomplete/index.vue'
+import Component from './autocomplete'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)

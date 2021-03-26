@@ -1,4 +1,4 @@
-import Component from './cascader/index.vue'
+import Component from './cascader'
 
 Component.install = function(Vue) {
   Vue.Component(Component.name, Component)
