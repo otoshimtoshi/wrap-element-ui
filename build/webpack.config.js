@@ -1,6 +1,6 @@
 const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
-const nodeExternals = require('webpack-node-externals')
+const config = require('./config')
 
 module.exports = {
   mode: 'production',
@@ -17,7 +17,7 @@ module.exports = {
     extensions: ['.ts', '.js', '.vue', '.json'],
     modules: ['node_modules'],
   },
-  externals: nodeExternals(),
+  externals: config.externals,
   optimization: {
     minimize: false,
   },

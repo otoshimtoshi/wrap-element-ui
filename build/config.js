@@ -1,6 +1,7 @@
 var path = require('path')
 var fs = require('fs')
 var nodeExternals = require('webpack-node-externals')
+var Components = require('../components.json')
 
 var utilsList = fs.readdirSync(
   path.resolve(__dirname, '../node_modules/element-ui/src/utils'),
@@ -12,6 +13,10 @@ var transitionList = fs.readdirSync(
   path.resolve(__dirname, '../node_modules/element-ui/src/transitions'),
 )
 var externals = {}
+
+Object.keys(Components).forEach(function(key) {
+  externals[`element-ui/packages/${key}`] = `element-ui/lib/${key}`
+})
 
 externals['element-ui/src/locale'] = 'element-ui/lib/locale'
 utilsList.forEach(function(file) {

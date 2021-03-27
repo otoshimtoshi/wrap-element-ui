@@ -5,58 +5,58 @@ import Avatar from './components/avatar'
 import Backtop from './components/backtop'
 import Badge from './components/badge'
 import Breadcrumb from './components/breadcrumb'
-import BreadcrumbItem from './components/breadcrumbItem'
+import BreadcrumbItem from './components/breadcrumb-item'
 import Button from './components/button'
-import ButtonGroup from './components/buttonGroup'
+import ButtonGroup from './components/button-group'
 import Calendar from './components/calendar'
 import Card from './components/card'
 import Carousel from './components/carousel'
-import CarouselItem from './components/carouselItem'
+import CarouselItem from './components/carousel-item'
 import Cascader from './components/cascader'
-import CascaderPanel from './components/cascaderPanel'
+import CascaderPanel from './components/cascader-panel'
 import Checkbox from './components/checkbox'
-import CheckboxButton from './components/checkboxButton'
-import CheckboxGroup from './components/checkboxGroup'
+import CheckboxButton from './components/checkbox-button'
+import CheckboxGroup from './components/checkbox-group'
 import Col from './components/col'
 import Collapse from './components/collapse'
-import CollapseItem from './components/collapseItem'
-import ColorPicker from './components/colorPicker'
+import CollapseItem from './components/collapse-item'
+import ColorPicker from './components/color-picker'
 import Container from './components/container'
-import DatePicker from './components/datePicker'
+import DatePicker from './components/date-picker'
 import Dialog from './components/dialog'
 import Divider from './components/divider'
 import Drawer from './components/drawer'
 import Dropdown from './components/dropdown'
-import DropdownItem from './components/dropdownItem'
-import DropdownMenu from './components/dropdownMenu'
+import DropdownItem from './components/dropdown-item'
+import DropdownMenu from './components/dropdown-menu'
 import Footer from './components/footer'
 import Form from './components/form'
-import FormItem from './components/formItem'
+import FormItem from './components/form-item'
 import Header from './components/header'
 import Icon from './components/icon'
 import Image from './components/image'
-import InfiniteScroll from './components/infiniteScroll'
+import InfiniteScroll from './components/infinite-scroll'
 import Input from './components/input'
-import InputNumber from './components/inputNumber'
+import InputNumber from './components/input-number'
 import Link from './components/link'
 import Loading from './components/loading'
 import Main from './components/main'
 import Menu from './components/menu'
-import MenuItem from './components/menuItem'
-import MenuItemGroup from './components/menuItemGroup'
+import MenuItem from './components/menu-item'
+import MenuItemGroup from './components/menu-item-group'
 import Message from './components/message'
-import MessageBox from './components/messageBox'
+import MessageBox from './components/message-box'
 import Notification from './components/notification'
 import Option from './components/option'
-import OptionGroup from './components/optionGroup'
-import PageHeader from './components/pageHeader'
+import OptionGroup from './components/option-group'
+import PageHeader from './components/page-header'
 import Pagination from './components/pagination'
 import Popconfirm from './components/popconfirm'
 import Popover from './components/popover'
 import Progress from './components/progress'
 import Radio from './components/radio'
-import RadioButton from './components/radioButton'
-import RadioGroup from './components/radioGroup'
+import RadioButton from './components/radio-button'
+import RadioGroup from './components/radio-group'
 import Rate from './components/rate'
 import Row from './components/row'
 import Scrollbar from './components/scrollbar'
@@ -67,15 +67,15 @@ import Step from './components/step'
 import Steps from './components/steps'
 import Submenu from './components/submenu'
 import Switch from './components/switch'
+import TabPane from './components/tab-pane'
 import Table from './components/table'
-import TableColumn from './components/tableColumn'
-import TabPane from './components/tabPane'
+import TableColumn from './components/table-column'
 import Tabs from './components/tabs'
 import Tag from './components/tag'
 import Timeline from './components/timeline'
-import TimelineItem from './components/timelineItem'
-import TimePicker from './components/timePicker'
-import TimeSelect from './components/timeSelect'
+import TimelineItem from './components/timeline-item'
+import TimePicker from './components/time-picker'
+import TimeSelect from './components/time-select'
 import Tooltip from './components/tooltip'
 import Transfer from './components/transfer'
 import Tree from './components/tree'
@@ -155,15 +155,15 @@ const components = [
   Steps,
   Submenu,
   Switch,
+  TabPane,
   Table,
   TableColumn,
-  TabPane,
   Tabs,
   Tag,
-  Timeline,
-  TimelineItem,
   TimePicker,
   TimeSelect,
+  Timeline,
+  TimelineItem,
   Tooltip,
   Transfer,
   Tree,
@@ -268,15 +268,15 @@ export default {
   Steps,
   Submenu,
   Switch,
+  TabPane,
   Table,
   TableColumn,
-  TabPane,
   Tabs,
   Tag,
-  Timeline,
-  TimelineItem,
   TimePicker,
   TimeSelect,
+  Timeline,
+  TimelineItem,
   Tooltip,
   Transfer,
   Tree,
