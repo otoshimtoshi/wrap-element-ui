@@ -1,7 +1,7 @@
 {
   "name": "@otoshimtoshi/wrap-element-ui",
   "description": "Wrap Element UI",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -16,7 +16,7 @@
     "element-ui"
   ],
   "license": "MIT",
-  "main": "lib/main.js",
+  "main": "lib/wrap-element-ui.js",
   "files": [
     "lib",
     "src",
