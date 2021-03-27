@@ -4,7 +4,7 @@
 
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api'
-import ELDropdownItem from 'element-ui/lib/el-dropdown-item'
+import ELDropdownItem from 'element-ui/lib/dropdown-item'
 
 export default defineComponent({
   name: 'JDropdownItem',
