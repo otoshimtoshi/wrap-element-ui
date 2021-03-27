@@ -1,6 +1,7 @@
-import Component from './alert'
+import { Component } from 'vue'
+import Alert from './alert'
 
-Component.install = function(Vue) {
-  Vue.Component(Component.name, Component)
+Component.install = () => {
+  Vue.Component(Alert.name, Alert)
 }
 export default Component
