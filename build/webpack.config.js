@@ -8,7 +8,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, '../lib'),
     publicPath: '.',
-    filename: 'index.js',
+    filename: 'main.js',
     libraryExport: 'default',
     library: 'WrapElementPlus',
     libraryTarget: 'commonjs2',
